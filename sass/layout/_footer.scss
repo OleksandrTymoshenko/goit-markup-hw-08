@@ -7,12 +7,15 @@
   }
   
   .container-footer {
-    display: flex;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
+    text-align: center;
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+      }
+}
   
   .footer-address {
     margin-right: 70px;
