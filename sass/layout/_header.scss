@@ -97,9 +97,9 @@
   .header-tel {
     align-items: center;
     color: var(--primary-text-color);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     // padding-top: 32px;
     // padding-bottom: 32px;
@@ -111,6 +111,10 @@
         }
     @media screen and (min-width: 1200px) {
     display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     }
   }
   
@@ -119,12 +123,33 @@
     margin-right: 10px;
     fill: currentColor;
   }
+
+  // .icon-mail {
+  //     @media screen and (min-width: 1200px) {
+  //     width: 16px;
+  //     height: 12px;
+  //     }
+  //     @media screen and (min-width: 768px) {
+  //     width: 14px;
+  //     height: 10px;
+  //   }
+  // }
+  //   .icon-tel {
+  //     @media screen and (min-width: 1200px) {
+  //     width: 10px;
+  //     height: 16px;
+  //     }
+  //     @media screen and (min-width: 768px) {
+  //     width: 10px;
+  //     height: 14px;
+  //     }
+  //   }
   
-  .header-mail {
-    @media screen and (min-width: 1200px) {
-      margin-right: 50px;
-    }
-  }
+  // .header-mail {
+  //   @media screen and (min-width: 1200px) {
+  //     margin-right: 50px;
+  //   }
+  // }
 
   .menu-open, 
   .menu-close {

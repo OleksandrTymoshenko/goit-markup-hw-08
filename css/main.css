@@ -191,8 +191,35 @@ img {
 
 .footer-subscribe {
   color: var(--white-bgc-text-color);
-  margin-top: 12px;
+  margin-top: 60px;
+  padding-left: 15px;
   outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    color: var(--white-bgc-text-color);
+    margin-top: 12px;
+    outline: none;
+    align-items: unset;
+  }
+}
+
+.footer-subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__form {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-subscribe__text {
@@ -217,7 +244,23 @@ img {
   transition: border var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
+@media screen and (min-width: 1200px) {
+  .field-subscribe {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border var(--animation-duration-hw-05) var(--bezier-hw-05);
+  }
+}
+
 .button-submit {
+  margin-top: 20px;
   position: relative;
   width: 200px;
   height: 50px;
@@ -236,6 +279,12 @@ img {
   border: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .button-submit {
+    margin-top: -20px;
+  }
+}
+
 .icon-send {
   fill: var(--white-bgc-text-color);
   position: absolute;
@@ -245,9 +294,19 @@ img {
 }
 
 .container-join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--white-bgc-text-color);
-  margin-top: 12px;
-  margin-right: 93px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-join {
+    color: var(--white-bgc-text-color);
+    margin-top: 12px;
+    align-items: unset;
+  }
 }
 
 .container-join__text {
@@ -554,9 +613,9 @@ img {
 .header-tel {
   align-items: center;
   color: var(--primary-text-color);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
@@ -572,6 +631,10 @@ img {
   .header-mail,
   .header-tel {
     display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -579,12 +642,6 @@ img {
 .icon-tel {
   margin-right: 10px;
   fill: currentColor;
-}
-
-@media screen and (min-width: 1200px) {
-  .header-mail {
-    margin-right: 50px;
-  }
 }
 
 .menu-open,
@@ -1038,6 +1095,7 @@ img {
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1045,7 +1103,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: 94px;
 }
 
 .clients__item {
@@ -1092,7 +1149,6 @@ img {
 }
 
 .footer {
-  display: flex;
   background: var(--hero-footer-bgc);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1100,11 +1156,29 @@ img {
 }
 
 .container-footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container-footer {
+    flex-direction: unset;
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -1114,7 +1188,36 @@ img {
 }
 
 .footer-address {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    display: block;
+    flex-direction: unset;
+    margin-right: 70px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    display: block;
+    flex-direction: unset;
+  }
 }
 
 .footer-logo {

@@ -1,7 +1,14 @@
 .container-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--white-bgc-text-color);
-    margin-top: 12px;
-    margin-right: 93px;
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+      color: var(--white-bgc-text-color);
+      margin-top: 12px;
+      align-items: unset;
+    }
   }
   
   .container-join__text {
