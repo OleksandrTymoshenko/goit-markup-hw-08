@@ -1530,10 +1530,22 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
+}
+
+@media screen and (min-width: 768px) {
+  .cardset {
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardset {
+    display: flex;
+  }
 }
 
 .cardset .cardset__item {
