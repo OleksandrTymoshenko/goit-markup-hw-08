@@ -162,6 +162,11 @@
     background-color: unset;
     color: var(--white-bgc-text-color);
     cursor: pointer;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        }
   }
 
     .menu-open {
@@ -172,7 +177,7 @@
   
   .menu-close {
     position: absolute;
-    right: 15px;
+    right: 30px;
     top: -37px;
   }
 
@@ -181,6 +186,11 @@
     width: 40px;
     height: 40px;
     fill: var(--title-text-color);
+    transition: fill var(--animation-duration-hw-05) var(--bezier-hw-05);
+        &:hover,
+        &:focus {
+        fill: var(--accent-color);
+      }
   }
   
   .mob-menu {
@@ -216,11 +226,11 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    &-active {
+    &.current {
       color: var(--accent-color);
     }
   }
-  
+
   .menu-contacts__list {
     margin-bottom: 64px;
   }
