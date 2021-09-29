@@ -101,8 +101,6 @@
     font-weight: 500;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     text-decoration: none;
     transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
         &:hover,
@@ -115,6 +113,8 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
   }
   
@@ -124,32 +124,28 @@
     fill: currentColor;
   }
 
-  // .icon-mail {
-  //     @media screen and (min-width: 1200px) {
-  //     width: 16px;
-  //     height: 12px;
-  //     }
-  //     @media screen and (min-width: 768px) {
-  //     width: 14px;
-  //     height: 10px;
-  //   }
-  // }
-  //   .icon-tel {
-  //     @media screen and (min-width: 1200px) {
-  //     width: 10px;
-  //     height: 16px;
-  //     }
-  //     @media screen and (min-width: 768px) {
-  //     width: 10px;
-  //     height: 14px;
-  //     }
-  //   }
+  .icon-mail {
+    width: 14px;
+    height: 10px;
+      @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+      }
+  }
+    .icon-tel {
+      width: 10px;
+      height: 14px;
+      @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+      }
+    }
   
-  // .header-mail {
-  //   @media screen and (min-width: 1200px) {
-  //     margin-right: 50px;
-  //   }
-  // }
+  .header-mail {
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
+  }
 
   .menu-open, 
   .menu-close {
@@ -177,7 +173,7 @@
   
   .menu-close {
     position: absolute;
-    right: 30px;
+    right: 15px;
     top: -37px;
   }
 
@@ -197,6 +193,7 @@
     position: fixed;
     background-color: var(--white-bgc-text-color);
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     padding-top: 48px;
@@ -212,6 +209,11 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+  }
+
+  .mob-menu__list {
+    width: 100%;
+    padding-left: 40px;
   }
   
   .mob-menu__item {
@@ -229,6 +231,11 @@
     &.current {
       color: var(--accent-color);
     }
+  }
+
+  .mob-menu-bottom {
+    width: 100%;
+    padding-left: 40px;
   }
 
   .menu-contacts__list {
