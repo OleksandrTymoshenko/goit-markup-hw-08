@@ -676,6 +676,12 @@ img {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  }
+  .header-mail:hover, .header-mail:focus,
+  .header-tel:hover,
+  .header-tel:focus {
+    color: var(--accent-color);
   }
 }
 
@@ -683,6 +689,7 @@ img {
   width: 14px;
   height: 10px;
   margin-right: 10px;
+  margin-top: 2px;
   fill: currentColor;
 }
 
@@ -690,6 +697,9 @@ img {
   .icon-mail {
     width: 16px;
     height: 12px;
+  }
+  .icon-mail:hover, .icon-mail:focus {
+    color: var(--accent-color);
   }
 }
 
@@ -704,6 +714,9 @@ img {
   .icon-tel {
     width: 10px;
     height: 16px;
+  }
+  .icon-tel:hover, .icon-tel:focus {
+    color: var(--accent-color);
   }
 }
 
